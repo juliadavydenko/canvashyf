@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Canvas.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/9459b1f812.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <!-- After connecting Bootstrap Scripts, crated a responsive navbar using Bootstrap and logo from the given picture.-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="images/navbar-brand-image.png" alt="navbar-brand-image">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <!-- Used <span> to highlight the word "Home" with the #448bec color to make it look like at the given picture. For color identification made a screenshot and used imagecolorpicker.com website.</span> -->
+              <!-- Added navigation through the website, added href="#" to each item which leads to the specigic link in the footer section -->
+              <a class="nav-link" href="#home"><span class="home">Home</span> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faqs">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gettoknowus">Single</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactsupport">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-contact" href="#contactsupport">
+          <img class="navbar-contact" src="images/contact-image.png" alt="contact-image">
+        </a>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <!-- Used <span> to highlight the word "CoWorking" with the #448bec color to make it look like at the given picture. For color identification made a screenshot and used imagecolorpicker.com website.</span> -->
+          <h1 class="big-heading">We are making better <span class="coworking">CoWorking</span> for you.</h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <!-- Created a paragraph and gave a class "title-text" to it, in CSS defined margin and text-aligned it (justify) as well as h1 element with a class "big-heading" to make it look like at the picture. -->
+          <p class="title-text">Collaboratively coordinate adaptive synergy with compelling “outside the box” thinking. Continually recaptiualize user friendly sources whereas leveraged.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Picture -->
+    <!-- I was thinking of the <div> here, howerver, decided to go without a <div> here -->
+  <section class="section-picture" id="section-picture">
+    <img class="section-picture-image" src="images/section-image.png" alt="section-image" />
+  </section>
+
+  <!-- Features -->
+    <!-- Put 2 divs into section. Used Font Awesome icons, connected FA with a link in the <head> section.-->
+  <section class="white-section" id="features">
+    <div>
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fa fa-wifi fa-4x"></i>
+          <h3 class='feature-title'>Fiber Optic WiFi</h3>
+          <p>Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP codes.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <!-- At first used "fa-coffee" tag as listed on Font awesome, however, it was displayed as a square, so I used Google search and Stack Overflow
+        to find the right tag for this icon, added "fa" before and it worked.-->
+          <i class="icon fa fa-coffee fa-4x"></i>
+          <h3 class='feature-title'>Cafeteria</h3>
+          <p>Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP codes.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fa fa-desktop fa-4x"></i>
+          <h3 class='feature-title'>Flexible Desks</h3>
+          <p>Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP codes.</p>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <i class="icon fa fa-lock fa-4x"></i>
+            <h3 class='feature-title'>Lockers</h3>
+            <p>Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP codes.</p>
+          </div>
+          <div class="feature-box col-lg-4">
+            <i class="icon fa fa-key fa-4x"></i>
+            <h3 class='feature-title'>100% Secure</h3>
+            <p>Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP codes.</p>
+          </div>
+          <div class="feature-box col-lg-4">
+            <i class="icon fa fa-print fa-4x"></i>
+            <h3 class='feature-title'>Printers & Fax</h3>
+            <p>Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP codes.</p>
+          </div>
+        </div>
+  </section>
+
+  <!-- Footer -->
+    <!-- Serched for footers in Bootstrap, however, decided to make it using <table> as from the KhanAcademy lesson. -->
+  <footer class="footer-section" id="footer">
+    <div class="container-fluid">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Features
+            </th>
+            <th>
+              Support
+            </th>
+            <th>
+              Trending
+            </th>
+            <th id="gettoknowus">
+              Get to Know us
+            </th>
+            <th>
+              Instagram Photos
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Help Center
+            </td>
+            <td id="home">
+              Home
+            </td>
+            <td>
+              Shop
+            </td>
+            <td>
+              Corporate
+            </td>
+            <td>
+              <img class="instagram-photos-image" src="images/instagram-photos-image.png" alt="instagram-photos-image" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Paid with Mobile
+            </td>
+            <td id="about">
+              About
+            </td>
+            <td>
+              Portfolio
+            </td>
+            <td>
+              Agency
+            </td>
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Status
+            </td>
+            <td id="faqs">
+              FAQs
+            </td>
+            <td>
+              Blog
+            </td>
+            <td>
+              eCommerce
+            </td>
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td id="contactsupport">
+              Contact Support
+            </td>
+            <td>
+              Support
+            </td>
+            <td>
+
+            </td>
+            <td>
+              Personal
+            </td>
+            <td>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </footer>
+  </div>
+</body>
+
+</html>
