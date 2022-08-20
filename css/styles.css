@@ -1,0 +1,148 @@
+/* Analized the given picture and searched for a similar font, taking into account Serif and Sans-Serif characteristics, the presence or absence a little feet ate the end of the central beams. Af
+Considered using Palanquin Dark Bold700 and Scada Bold700, tried them, however, decided on using font-family: 'Poppins', sans-serif; (SemiBold600) from https://fonts.google.com/specimen/Poppins (Copied linh to the <head> in HTML and specified in CSS below)  */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h1, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #444444;
+  /* Tried different text-align values, searched on Google and this one worked pretty well */
+  text-align: start;
+  /* Tried different margins to make it look like at the picture, decided on these parameters */
+  margin: 10% 3% 5% 0;
+}
+.coworking {
+  color: #448bec;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  font-size: 1rem;
+  background-color: white;
+  color: #444444;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* Navigation Bar */
+.navbar-light {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5px;
+}
+
+.navbar-brand {
+  margin: 3% 5% 5% -4%;
+}
+
+.navbar-contact {
+  margin: 3% -5% 5% 2%;
+}
+
+.navbar {
+  margin: 0% 5% 5% 1%;
+  color: #444444;
+}
+
+.home {
+  color: #448bec;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-weight: bold;
+}
+
+.nav-link {
+  display: inline-block;
+  color: #444444;
+}
+
+/*I'm using pseudo-classes below to change the color of the text on the mouse hover*/
+.nav-item a:hover {
+  color: #448bec !important;
+}
+
+/*Section Picture*/
+/* Tried different sizes to make it look like at the picture, decided on these parameters */
+.section-picture-image {
+  size: 100px 100px;
+}
+
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Text */
+.title-text {
+  text-align: justify;
+  right: 30%;
+  /* Tried different margins to make it look like at the picture, decided on these parameters */
+  margin: 12% 3% 5% 20%;
+}
+
+/* Features */
+/* Tried to make position absolute, didn't work, made margin auto and was satisfied with the result */
+#features {
+  margin: auto;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #448bec;
+  margin-bottom: 1rem;
+}
+
+/*I'm using pseudo-classes below to change the color of the Font Awesome icons on the mouse hover*/
+.icon:hover {
+  color: #155bbc;
+}
+
+/* Footer Section */
+/* Tried changing height and width for the table until I found the best values that are the most similar to the given picture */
+#footer {
+  background-color: #155bbc;
+  color: white;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  height: 80px;
+}
+
+td {
+  width: 300px;
+}
